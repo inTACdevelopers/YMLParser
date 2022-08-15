@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<yml_catalog date="2022-07-24T16:37">
+	<shop>
+		<!-- !Название вашего магазина -->
+		<name>ShopName</name>
+		<!-- !Название вашей компании -->
+		<company>CompanyName</company>
+		<!-- !Адрес сайта магазина, записанный согласно стандарту RFC 3986 -->
+		<url>https://best.seller.ru</url>
+		<!-- Название системы управления контентом -->
+		<platform>uCoz</platform>
+		<!-- Версия магазина -->
+		<version>1.0</version>
+		<!-- Название вашего агентства -->
+		<agency>Технологичные решения</agency>
+		<!-- !Почта вашего магазина -->
+		<email>example-email@gmail.com</email>
+		<!-- !Список курсов валют магазина. Главная валюта имеет rate= “1” -->
+		<currencies>
+			<currency id="RUR" rate="1"/>
+			<currency id="USD" rate="57"/>
+		</currencies>
+		<!-- !Список категорий и подкатегорий TODO: hash таблицу переводов категорий ЯМ в наши -->
+		<categories>
+			<category id="1">Бытовая техника</category>
+			<category id="10" parentId="1">Мелкая техника для кухни</category>
+			<category id="101" parentId="10">Сэндвичницы и приборы для выпечки</category>
+		</categories>
+		<!-- Добавьте в файл <delivery>false</delivery>,
+			если магазин не доставляет товары, и <pickup>false</pickup>,
+			если в магазине недоступен самовывоз. -->
+		<!-- !Статик данные о доставке -->
+		<delivery-options>
+			<option cost="200" days="1"/>
+		</delivery-options>
+		<!-- !Статик данные о самовывозе -->
+		<pickup-options>
+			<option cost="200" days="1"/>
+		</pickup-options>
+		<!-- Данные о товарах -->
+		<offers>
+			<offer id="9012" bid="80">
+				<name>Мороженица Brand 3811</name>
+				<vendor>Brand1</vendor>
+				<vendorCode>A1234567B</vendorCode>
+				<url>http://best.seller.ru/product_page.asp?pid=12345</url>
+				<price>8990</price>
+				<oldprice>9990</oldprice>
+				<enable_auto_discounts>true</enable_auto_discounts>
+				<currencyId>RUR</currencyId>
+				<categoryId>101</categoryId>
+				<vat>VAT_20</vat>
+				<picture>https://best.seller.ru/img/model_12345.jpg</picture>
+				<delivery>true</delivery>
+				<pickup>true</pickup>
+				<delivery-options>
+					<option cost="300" days="1" order-before="18"/>
+				</delivery-options>
+				<pickup-options>
+					<option cost="300" days="1-3"/>
+				</pickup-options>
+				<store>true</store>
+				<description>
+					<![CDATA[          
+                        <h3>Мороженица Brand 3811</h3>
+                        <p>Это прибор, который придётся по вкусу всем любителям десертов и сладостей, ведь с его помощью вы сможете делать вкусное домашнее мороженое из натуральных ингредиентов.</p>
+                ]]>
+				</description>
+				<sales_notes>Необходима предоплата.</sales_notes>
+				<manufacturer_warranty>true</manufacturer_warranty>
+				<country_of_origin>Китай</country_of_origin>
+				<barcode>4601546021298</barcode>
+				<param name="Цвет">белый</param>
+				<weight>3.6</weight>
+				<dimensions>20.1/20.551/22.5</dimensions>
+				<count>100</count>
+			</offer>
+			<offer id="12346" bid="60">
+				<typePrefix>Сэндвичница</typePrefix>
+				<vendor>Brand2</vendor>
+				<model>K220Y9</model>
+				<vendorCode>A1234567B</vendorCode>
+				<url>https://best.seller.ru/product_page.asp?pid=12345</url>
+				<price>1099</price>
+				<oldprice>1399</oldprice>
+				<enable_auto_discounts>false</enable_auto_discounts>
+				<currencyId>RUR</currencyId>
+				<categoryId>101</categoryId>
+				<vat>VAT_20</vat>
+				<picture>https://best.seller.ru/img/device56789.jpg</picture>
+				<delivery>false</delivery>
+				<pickup>true</pickup>
+				<pickup-options>
+					<option cost="350" days="1" order-before="12"/>
+				</pickup-options>
+				<param name="Мощность">750 Вт</param>
+				<description>Сэндвичница 2 в 1: можно приготовить как сэндвичи, так и вафли.</description>
+				<sales_notes>Наличные, Visa/Mastercard, б/н расчет</sales_notes>
+				<store>false</store>
+				<manufacturer_warranty>true</manufacturer_warranty>
+				<country_of_origin>Россия</country_of_origin>
+				<barcode>9876543210</barcode>
+				<weight>1.03</weight>
+				<dimensions>20.800/23.500/9.000</dimensions>
+				<count>23</count>
+			</offer>
+		</offers>
+	</shop>
+</yml_catalog>
